@@ -1,3 +1,7 @@
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+
 from flask import Flask, render_template, request, redirect, url_for, session, jsonify
 from pymongo import MongoClient
 import random
